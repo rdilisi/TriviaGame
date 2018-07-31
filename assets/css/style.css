@@ -1,0 +1,23 @@
+body {
+    font-family: 'Limelight', sans-serif;
+    background-image: url("assets/images/chicagomob.jpg")
+}
+
+h1 {
+    font-family: 'Limelight';
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    clear: both;
+}
+
+#button  {
+    background-color: red;
+    color: black;
+    width: 200px;
+    height: 75px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Trivia Game</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> -->
+    <script src = "assets/javascript/app.js"></script>
+
+
+</head>
+<body>
+   
+        <h1> Are You Ready To Be Part Of The Family?</h1>  
+
+        <form id="quiz" name="quiz">
+        
+        <p>What city did Al Capone control during the 1920's?</p>
+        <input type="radio" name="question1" value="Toronto"> Toronto<br>
+        <input type="radio" name="question1" value="New York"> New York<br>
+        <input type="radio" name="question1" value="Chicago"> Chicago<br>
+        <input type="radio" name="question1" value="Los Angeles"> Los Angeles<br>
+        <input type="radio" name="question1" value="Buffalo"> Buffalo<br>
+
+        <p>How many organized crime family's control New York</p>
+        <input type="radio" name="question2" value="3"> 3<br>
+        <input type="radio" name="question2" value="5"> 5<br>
+        <input type="radio" name="question2" value="1"> 1<br>
+        <input type="radio" name="question2" value="10"> 10<br>
+        <input type="radio" name="question2" value="2"> 2<br>
+
+        <p>Whichh mobster was know as the "Mad Hatter"?</p>
+        <input type="radio" name="question3" value="Meyr Lansky"> Meyer Lansky  <br>
+        <input type="radio" name="question3" value="Charile Luciano"> Charlie Luciano <br>
+        <input type="radio" name="question3" value="Joe Adonis"> Joe Adonis <br>
+        <input type="radio" name="question3" value="Joe Colombo"> Joe Colombo<br>
+        <input type="radio" name="question3" value="Albert Anastasia"> Albert Anastasia<br>
+
+        <p>Which vice alled organized crime to become wealthy and powerful?</p>
+        <input type="radio" name="question4" value="Gambling"> Gambling<br>
+        <input type="radio" name="question4" value="Prostitution"> Prostitution<br>
+        <input type="radio" name="question4" value="Loand Sharking"> Loan Sharking<br>
+        <input type="radio" name="question4" value="Liquor"> Liquor<br>
+        <input type="radio" name="question4" value="Drugs"> Drugs<br>
+
+        <p>Which mobster was known as the "Prime Minister"?</p>
+        <input type="radio" name="question5" value="Benjamin Seigel"> Benjamin Seigel<br>
+        <input type="radio" name="question5" value="Al Capone"> Al Capone<br>
+        <input type="radio" name="question5" value="Frank Costello"> Frank Costello<br>
+        <input type="radio" name="question5" value="Joe Adonis"> Joe Adonis<br>
+        <input type="radio" name="question5" value="Henry Hill"> Henry Hill<br>
+
+        <p>What city is Benjamin (Bugsy) Seigel is accredited to becoming famous?</p>
+        <input type="radio" name="question6" value="Brooklyn"> Brooklyn<br>
+        <input type="radio" name="question6" value="Beverly Hills"> Beverly Hills<br>
+        <input type="radio" name="question6" value="Las Vegas"> Las Vegas<br>
+        <input type="radio" name="question6" value="New Orleans"> New Orleans<br>
+        <input type="radio" name="question6" value="Kansas City"> Kansas City<br>
+
+        <p>What nick name was John Gotti known for?</p>
+        <input type="radio" name="question7" value="Ducks"> Ducks<br>
+        <input type="radio" name="question7" value="Bugsy"> Bugsy<br>
+        <input type="radio" name="question7" value="Scarface"> Scarface<br>
+        <input type="radio" name="question7" value="Doves"> Doves<br>
+        <input type="radio" name="question7" value="Teflon Don"> Teflon Don<br>
+
+        <p>Donnie Brasco, the famous FBI undercover agent, infiltrated which New York family?</p>
+        <input type="radio" name="question8" value="Gambino"> Gambino<br>
+        <input type="radio" name="question8" value="Bonanno"> Bonanno<br>
+        <input type="radio" name="question8" value="Genovese"> Genovese<br>
+        <input type="radio" name="question8" value="Colombo"> Colombo<br>
+        <input type="radio" name="question8" value="Lucchese"> Lucchese<br>
+
+        <p>What casino was, at one time, mob owned and operated?</p>
+        <input type="radio" name="question9" value="Stardust"> Stardust<br>
+        <input type="radio" name="question9" value="Tropicana"> Tropicana<br>
+        <input type="radio" name="question9" value="Sahara"> Sahara<br>
+        <input type="radio" name="question9" value="The Flamingo"> The Flamingo<br>
+        <input type="radio" name="question9" value="All the above"> All the above<br>
+        
+
+        <p>Which future mob boss shot Frank Costello in failed hit in 1957?</p>
+        <input type="radio" name="question10" value="Al Capone"> Al Capone<br>
+        <input type="radio" name="question10" value="Dutch Schultz"> Dutch Schultz<br>
+        <input type="radio" name="question10" value="Vincent Gigante"> Vincent Gigante<br>
+        <input type="radio" name="question10" value="Bugsy Seigel"> Bugsy Seigel<br>
+        <input type="radio" name="question10" value="Joe Masseria"> Joe Masseria<br>
+        
+        <input id = "button" type = "button" value = "Let me kiss the hand!" onclick = "check();">
+        
+        </form>
+
+        <!-- <div id="musicControls" class="text-center">
+                <button class="btn btn-warning btn-xs theme-button">
+                  <span class="fa fa-music"></span> Play Theme!</button>
+                <button class="btn btn-dark btn-xs pause-button">
+                  <span class="fa fa-pause"></span> Pause Song</button>
+        </div>
+       -->
+
+
+
+
+</body>
+</html>
