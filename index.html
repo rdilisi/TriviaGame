@@ -10,103 +10,107 @@
     <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> -->
-    <script src = "assets/javascript/app.js"></script>
-
 
 </head>
+
 <body>
-   
+
+<button class = "start">START</button>
+
+<div class = "main-container hide">
+
+
+   <div class = "timer"></div>
+
         <h1> Are You Ready To Be Part Of The Family?</h1>  
 
         <form id="quiz" name="quiz">
         
-        <p>What city did Al Capone control during the 1920's?</p>
-        <input type="radio" name="question1" value="Toronto"> Toronto<br>
-        <input type="radio" name="question1" value="New York"> New York<br>
-        <input type="radio" name="question1" value="Chicago"> Chicago<br>
-        <input type="radio" name="question1" value="Los Angeles"> Los Angeles<br>
-        <input type="radio" name="question1" value="Buffalo"> Buffalo<br>
+        <h2>What city did Al Capone control during the 1920's?</h2>
+        <input type="radio" id = "mc" name="question1" value="Toronto"> Toronto
+        <input type="radio" id = "mc" name="question1" value="New York"> New York
+        <input type="radio" id = "mc" name="question1" value="Chicago"> Chicago
+        <input type="radio" id = "mc" name="question1" value="Los Angeles"> Los Angeles
+        <input type="radio" id = "mc" name="question1" value="Buffalo"> Buffalo
 
-        <p>How many organized crime family's control New York</p>
-        <input type="radio" name="question2" value="3"> 3<br>
-        <input type="radio" name="question2" value="5"> 5<br>
-        <input type="radio" name="question2" value="1"> 1<br>
-        <input type="radio" name="question2" value="10"> 10<br>
-        <input type="radio" name="question2" value="2"> 2<br>
+        <h2>How many organized crime family's control New York</h2>
+        <input type="radio" id = "mc" name="question2" value="3"> 3
+        <input type="radio" id = "mc" name="question2" value="5"> 5
+        <input type="radio" id = "mc" name="question2" value="1"> 1
+        <input type="radio" id = "mc" name="question2" value="10"> 10
+        <input type="radio" id = "mc" name="question2" value="2"> 2
 
-        <p>Whichh mobster was know as the "Mad Hatter"?</p>
-        <input type="radio" name="question3" value="Meyr Lansky"> Meyer Lansky  <br>
-        <input type="radio" name="question3" value="Charile Luciano"> Charlie Luciano <br>
-        <input type="radio" name="question3" value="Joe Adonis"> Joe Adonis <br>
-        <input type="radio" name="question3" value="Joe Colombo"> Joe Colombo<br>
-        <input type="radio" name="question3" value="Albert Anastasia"> Albert Anastasia<br>
+        <h2>Which mobster was know as the "Mad Hatter"?</h2>
+        <input type="radio"  id = "mc" name="question3" value="Meyr Lansky"> Meyer Lansky  
+        <input type="radio"  id = "mc" name="question3" value="Charile Luciano"> Charlie Luciano 
+        <input type="radio"  id = "mc" name="question3" value="Joe Adonis"> Joe Adonis 
+        <input type="radio"  id = "mc" name="question3" value="Joe Colombo"> Joe Colombo
+        <input type="radio"  id = "mc" name="question3" value="Albert Anastasia"> Albert Anastasia
 
-        <p>Which vice alled organized crime to become wealthy and powerful?</p>
-        <input type="radio" name="question4" value="Gambling"> Gambling<br>
-        <input type="radio" name="question4" value="Prostitution"> Prostitution<br>
-        <input type="radio" name="question4" value="Loand Sharking"> Loan Sharking<br>
-        <input type="radio" name="question4" value="Liquor"> Liquor<br>
-        <input type="radio" name="question4" value="Drugs"> Drugs<br>
+        <h2>Which vice allowed organized crime to become wealthy and powerful?</h2>
+        <input type="radio"  id = "mc" name="question4" value="Gambling"> Gambling
+        <input type="radio"  id = "mc" name="question4" value="Prostitution"> Prostitution
+        <input type="radio"  id = "mc" name="question4" value="Loand Sharking"> Loan Sharking
+        <input type="radio"  id = "mc" name="question4" value="Liquor"> Liquor
+        <input type="radio"  id = "mc" name="question4" value="Drugs"> Drugs
 
-        <p>Which mobster was known as the "Prime Minister"?</p>
-        <input type="radio" name="question5" value="Benjamin Seigel"> Benjamin Seigel<br>
-        <input type="radio" name="question5" value="Al Capone"> Al Capone<br>
-        <input type="radio" name="question5" value="Frank Costello"> Frank Costello<br>
-        <input type="radio" name="question5" value="Joe Adonis"> Joe Adonis<br>
-        <input type="radio" name="question5" value="Henry Hill"> Henry Hill<br>
+        <h2>Which mobster was known as the "Prime Minister"?</h2>
+        <input type="radio"  id = "mc" name="question5" value="Benjamin Seigel"> Benjamin Seigel
+        <input type="radio"  id = "mc" name="question5" value="Al Capone"> Al Capone
+        <input type="radio"  id = "mc" name="question5" value="Frank Costello"> Frank Costello
+        <input type="radio"  id = "mc" name="question5" value="Joe Adonis"> Joe Adonis
+        <input type="radio"  id = "mc" name="question5" value="Henry Hill"> Henry Hill
 
-        <p>What city is Benjamin (Bugsy) Seigel is accredited to becoming famous?</p>
-        <input type="radio" name="question6" value="Brooklyn"> Brooklyn<br>
-        <input type="radio" name="question6" value="Beverly Hills"> Beverly Hills<br>
-        <input type="radio" name="question6" value="Las Vegas"> Las Vegas<br>
-        <input type="radio" name="question6" value="New Orleans"> New Orleans<br>
-        <input type="radio" name="question6" value="Kansas City"> Kansas City<br>
+        <h2>What city is Benjamin (Bugsy) Seigel is accredited to becoming famous?</h2>
+        <input type="radio"  id = "mc" name="question6" value="Brooklyn"> Brooklyn
+        <input type="radio"  id = "mc" name="question6" value="Beverly Hills"> Beverly Hills
+        <input type="radio"  id = "mc" name="question6" value="Las Vegas"> Las Vegas
+        <input type="radio"  id = "mc" name="question6" value="New Orleans"> New Orleans
+        <input type="radio"  id = "mc" name="question6" value="Kansas City"> Kansas City
 
-        <p>What nick name was John Gotti known for?</p>
-        <input type="radio" name="question7" value="Ducks"> Ducks<br>
-        <input type="radio" name="question7" value="Bugsy"> Bugsy<br>
-        <input type="radio" name="question7" value="Scarface"> Scarface<br>
-        <input type="radio" name="question7" value="Doves"> Doves<br>
-        <input type="radio" name="question7" value="Teflon Don"> Teflon Don<br>
+        <h2>What nick name was John Gotti known for?</h2>
+        <input type="radio"  id = "mc" name="question7" value="Ducks"> Ducks
+        <input type="radio"  id = "mc" name="question7" value="Bugsy"> Bugsy
+        <input type="radio"  id = "mc" name="question7" value="Scarface"> Scarface
+        <input type="radio"  id = "mc" name="question7" value="Doves"> Doves
+        <input type="radio"  id = "mc" name="question7" value="Teflon Don"> Teflon Don
 
-        <p>Donnie Brasco, the famous FBI undercover agent, infiltrated which New York family?</p>
-        <input type="radio" name="question8" value="Gambino"> Gambino<br>
-        <input type="radio" name="question8" value="Bonanno"> Bonanno<br>
-        <input type="radio" name="question8" value="Genovese"> Genovese<br>
-        <input type="radio" name="question8" value="Colombo"> Colombo<br>
-        <input type="radio" name="question8" value="Lucchese"> Lucchese<br>
+        <h2>Donnie Brasco, the famous FBI undercover agent, infiltrated which New York family?</h2>
+        <input type="radio"  id = "mc" name="question8" value="Gambino"> Gambino
+        <input type="radio"  id = "mc" name="question8" value="Bonanno"> Bonanno
+        <input type="radio"  id = "mc" name="question8" value="Genovese"> Genovese
+        <input type="radio"  id = "mc" name="question8" value="Colombo"> Colombo
+        <input type="radio"  id = "mc" name="question8" value="Lucchese"> Lucchese
 
-        <p>What casino was, at one time, mob owned and operated?</p>
-        <input type="radio" name="question9" value="Stardust"> Stardust<br>
-        <input type="radio" name="question9" value="Tropicana"> Tropicana<br>
-        <input type="radio" name="question9" value="Sahara"> Sahara<br>
-        <input type="radio" name="question9" value="The Flamingo"> The Flamingo<br>
-        <input type="radio" name="question9" value="All the above"> All the above<br>
+        <h2>What casino was, at one time, mob owned and operated?</h2>
+        <input type="radio" id = "mc"  name="question9" value="Stardust"> Stardust
+        <input type="radio" id = "mc"  name="question9" value="Tropicana"> Tropicana
+        <input type="radio" id = "mc"  name="question9" value="Sahara"> Sahara
+        <input type="radio" id = "mc"  name="question9" value="The Flamingo"> The Flamingo
+        <input type="radio" id = "mc"  name="question9" value="All the above"> All the above
         
 
-        <p>Which future mob boss shot Frank Costello in failed hit in 1957?</p>
-        <input type="radio" name="question10" value="Al Capone"> Al Capone<br>
-        <input type="radio" name="question10" value="Dutch Schultz"> Dutch Schultz<br>
-        <input type="radio" name="question10" value="Vincent Gigante"> Vincent Gigante<br>
-        <input type="radio" name="question10" value="Bugsy Seigel"> Bugsy Seigel<br>
-        <input type="radio" name="question10" value="Joe Masseria"> Joe Masseria<br>
+        <h2>Which future mob boss shot Frank Costello in failed hit in 1957?</h2>
+        <input type="radio" id = "mc" name="question10" value="Al Capone"> Al Capone
+        <input type="radio" id = "mc" name="question10" value="Dutch Schultz"> Dutch Schultz
+        <input type="radio" id = "mc" name="question10" value="Vincent Gigante"> Vincent Gigante
+        <input type="radio" id = "mc" name="question10" value="Bugsy Seigel"> Bugsy Seigel
+        <input type="radio" id = "mc" name="question10" value="Joe Masseria"> Joe Masseria<br><br>
         
-        <input id = "button" type = "button" value = "Let me kiss the hand!" onclick = "check();">
+        <input id = "button" type = "button" value = "Kiss the hand!" onclick = "check();">
         
         </form>
 
-        <!-- <div id="musicControls" class="text-center">
-                <button class="btn btn-warning btn-xs theme-button">
-                  <span class="fa fa-music"></span> Play Theme!</button>
-                <button class="btn btn-dark btn-xs pause-button">
-                  <span class="fa fa-pause"></span> Pause Song</button>
+        <div id = "after_submit">
+            <p id = "number_correct"></p>
+
         </div>
-       -->
+        <button class = "stop-music hide">Stop Music</button>
+    </div>
 
+</html>
 
-
-
+<script src = "assets/javascript/app.js"></script>
+       
 </body>
 </html>

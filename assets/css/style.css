@@ -1,11 +1,13 @@
 body {
     font-family: 'Limelight', sans-serif;
-    background-image: url("assets/images/chicagomob.jpg")
+    background-image: url("../images/chicagomob.jpg");
+    text-align: center;
+    
 }
 
 h1 {
     font-family: 'Limelight';
-    font-size: 30px;
+    font-size: 40px;
     color: red;
     text-align: center;
     clear: both;
@@ -13,11 +15,47 @@ h1 {
 
 #button  {
     background-color: red;
-    color: black;
+    color: white;
     width: 200px;
     height: 75px;
     font-style: italic;
     font-size: 18px;
+    font-family: 'Limelight'
 }
 
+#after_submit {
+    visibility: hidden;
+}
 
+.hide {
+    display: none;
+}
+
+.start {
+    margin-top: 45%;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 100px;
+    font-style: italic;
+    font-size: 40px;
+    font-family: 'Limelight';
+}
+.timer {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(106, 101, 101);
+}
+
+.main-container {
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 18px;
+
+}
